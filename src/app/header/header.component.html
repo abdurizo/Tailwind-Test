@@ -1,0 +1,21 @@
+<header class="p-6 bg-[rgba(26,11,46,1)]">
+  <div class="container flex justify-between ">
+    <div class="logo">
+      <img src="../../assets/image/logo.png" alt="">
+    </div>
+    <nav class="flex items-center gap-[100px]">
+      <a
+        [routerLink]="['']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav_linck"
+      >
+        Home
+      </a>
+      <a [routerLink]="['about']" routerLinkActive="active" class="nav_linck"
+        >About</a
+      >
+      <a class="nav_linck">Lab</a>
+    </nav>
+  </div>
+</header>

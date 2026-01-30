@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import"./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body{
+    background: url('./assets/image/Background.png') no-repeat center;
+    background-size: cover
+  }
+  img {
+    @apply w-full;
+  }
+}
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-4;
+  }
+  .nav_linck{
+    @apply  text-white
+  }
+   .active{
+        @apply text-white
+    }
+}
