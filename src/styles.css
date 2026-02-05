@@ -5,7 +5,8 @@
 @layer base {
   body{
     background: url('./assets/image/Background.png') no-repeat center;
-    background-size: cover
+    background-size: cover;
+    overflow-x: hidden
   }
   img {
     @apply w-full;
@@ -13,7 +14,7 @@
 }
 @layer components {
   .container {
-    @apply max-w-[1200px] mx-auto px-4;
+    @apply max-w-[1200px] mx-auto px-4 overflow-x-hidden
   }
   .nav_linck{
     @apply  text-white

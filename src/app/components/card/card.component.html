@@ -1,18 +1,18 @@
 <div
-  class="wrap_card flex gap-x-[40px]  rounded-xl p-[50px] bg-[linear-gradient(110.49deg,#130428_19.95%,#251043_67.64%,#38126D_107.08%,#261045_156.61%,#190634_183.21%)]"
+  class="wrap_card flex items-center gap-x-[40px] rounded-xl p-[30px] sm:p-[50px]"
+  [style.background]="cardInterface.bg"
 >
-  <div class="image_card">
-    <img src="../../../assets/image/star.png" alt="" class="" />
+  <div class="image_card max-w-[121px] max-h-[115px] object-cover">
+    <img [src]="cardInterface.img" alt="" class="aspect-121/115 object-cover" />
   </div>
   <div class="text-white">
-    <h3 class="font-semibold text-[26px]">CIB on the Mobile</h3>
-    <p class="font-medium text-[12px]">
-      Take your client onboard seamlessly by our <br />
-      amazing tool of digital onboard process.
+    <h3 class="font-semibold text-[20px] sm:text-[26px]">{{ cardInterface.title }}</h3>
+    <p class="font-medium text-[8px] sm:text-[12px]">
+      {{ cardInterface.description }}
     </p>
     <a
       href="#"
-      class="inline-block text-[14px] mt-[10px] py-2 px-6 border-2 border-[rgba(105,59,147,1)] bg-[rgba(44,18,80,1)] rounded-xl hover:bg-[rgba(105,59,147,0.3)] transition"
+      class="inline-block text-[10px] mt-[10px] py-1 px-4 border-2 border-[rgba(105,59,147,1)] bg-[rgba(44,18,80,1)] rounded-xl hover:bg-[rgba(105,59,147,0.3)] transition sm:text-[14px]:py-2:px-6"
       >LEARN MORE
     </a>
   </div>

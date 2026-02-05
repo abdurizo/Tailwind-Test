@@ -1,10 +1,9 @@
 <div class="expetience py-[100px] mt-6">
   <h2 class="text-white text-[40px] font-preahvihear">Work Experience</h2>
-  <div class="grid grid-cols-2 gap-4 mt-[40px]">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+  <div class="grid gap-4 mt-[40px] sm:grid-cols-2 ">
+    @for (card of cardInterface; track $index) {
+      <app-card [cardInterface]="card"></app-card>
+    }
   </div>
 </div>
-<img src="../../../../assets/image/opportunities.png" alt="">
+<img src="../../../../assets/image/opportunities.png" alt="" />
