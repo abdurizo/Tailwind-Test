@@ -4,9 +4,8 @@
 @tailwind utilities;
 @layer base {
   body{
-    background: url('./assets/image/Background.png') no-repeat center;
+    background: url('./assets/image/Background.png');
     background-size: cover;
-    overflow-x: hidden
   }
   img {
     @apply w-full;
@@ -14,7 +13,7 @@
 }
 @layer components {
   .container {
-    @apply max-w-[1200px] mx-auto px-4 overflow-x-hidden
+    @apply max-w-[1200px] mx-auto px-4 overflow-hidden
   }
   .nav_linck{
     @apply  text-white
