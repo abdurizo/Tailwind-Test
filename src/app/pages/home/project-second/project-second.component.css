@@ -1,0 +1,20 @@
+@media(max-width:330px){
+   .media_370{
+    margin-top: 170px;
+   } 
+}
+@media(max-width:376px){
+   .media_370{
+    margin-top: 150px;
+   } 
+}
+@media(max-width:420px){
+   .media_370{
+    margin-top: 130px;
+   } 
+}
+@media(max-width:550px){
+   .media_370{
+    margin-top: 120px;
+   } 
+}
